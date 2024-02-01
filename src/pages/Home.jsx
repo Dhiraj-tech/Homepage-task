@@ -1,56 +1,52 @@
 import React from "react";
 import { Button } from "react-bootstrap";
+import { Carousel } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export const Home = () => {
+  const imageStyle = {
+    height: "400px",
+    width: "100%",
+    objectFit: "cover",
+  };
   return (
     <>
       {/* Carousel start */}
-      <div className="container-fluid p-0">
-        <div
-          id="header-carousel"
-          className="carousel slide"
-          data-ride="carousel"
-        >
-          {/* Carousel Inner */}
-          <div className="carousel-inner">
-            <div className="carousel-item active">
-              <img className="w-100" src="doggy.png" alt="Image" />
-              <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                <div className="home-text">
-                  <h2 id="head1">
-                    We provide the best care to our furry friends!
-                  </h2>
-                  <p className="slide-desc">
-                    Top Quality of Pet Product Store.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* Carousel Controls */}
-          <a
-            className="carousel-control-prev"
-            href="#header-carousel"
-            role="button"
-            data-slide="prev"
-          >
-            <div className="btn btn-primary rounded-circle" id="second-car">
-              <span className="carousel-control-prev-icon mb-n2"></span>
-            </div>
-          </a>
-          <a
-            className="carousel-control-next"
-            href="#header-carousel"
-            role="button"
-            data-slide="next"
-          >
-            <div className="btn btn-primary rounded-circle" id="third-car">
-              <span className="carousel-control-next-icon mb-n2"></span>
-            </div>
-          </a>
-        </div>
-      </div>
+      <Carousel>
+        {/* Slide 1 */}
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="doggy.png"
+            alt="First Slide"
+            style={imageStyle}
+          />
+          <Carousel.Caption style={{ top: "0", bottom: "auto" }}>
+            <h3 style={{ color: "black" }}>
+              We provide the best care to our furry friends!
+            </h3>
+            <p style={{ color: "black" }}>Top Quality of Pet Product Store.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+
+        {/* Slide 2 */}
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="home treatment.jpg"
+            alt="Third Slide"
+            style={imageStyle}
+          />
+          <Carousel.Caption style={{ top: "0", bottom: "auto" }}>
+            <h3 style={{ color: "black" }}>
+              Discover more about our pet services!
+            </h3>
+            <p style={{ color: "black" }}>
+              Engaging content for the third slide.
+            </p>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
       {/* Carousel end */}
 
       {/* About us start */}
@@ -345,11 +341,7 @@ export const Home = () => {
           </div>
         </div>
       </div>
-      <a
-        href="#"
-        className="btn btn-lg btn-primary me-3 px-4"
-        id="pet-btn"
-      >
+      <a href="#" className="btn btn-lg btn-primary me-3 px-4" id="pet-btn">
         View All <i className="fa-solid fa-circle-chevron-right ms-3"></i>
       </a>
 
