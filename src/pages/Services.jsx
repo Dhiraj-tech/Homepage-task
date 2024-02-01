@@ -3,7 +3,7 @@ import { Button } from "react-bootstrap";
 export const Services = () => {
   return (
     <>
-     <h1 className="text-center mt-5" id="service-head">
+      <h1 className="text-center mt-5" id="service-head">
         Our Services
       </h1>
       <p className="text-center text-muted" id="service-para">
@@ -14,137 +14,106 @@ export const Services = () => {
         happiness of their furry friends.
       </p>
 
-      <main className="row">
-        <div className="col-12">
-          <div className="row">
-            <div className="col-4 my-3" id="service-card">
-              <div className="card">
-                <img
-                  src="doog grooming.jpg"
-                  className="card-img-top"
-                  alt="..."
-                />
-                <div className="card-body">
-                  <h5 className="card-title">Dog/Cat Grooming</h5>
-                  <p className="card-text text-muted">
-                    We are enhancing our skills, salon, and 
-                    equipment to meet the challenges of pet
-                    grooming.
-                  </p>
-                  <div className="text-center">
-                  <Button className="service-btn" variant="primary">View More</Button>
-                  </div>
-                </div>
+      <div className="container pt-5">
+        <div className="row pb-3">
+          <div className="col-lg-4 mb-4">
+            <div className="card border-0 mb-2">
+              <img className="card-img-top" src="doog grooming.jpg" alt="" />
+              <div className="card-body bg-light p-4">
+                <h4 className="card-title text-truncate">Dog/Cat Grooming</h4>
+                <p>
+                  We are enhancing our skills, salon, and equipment to meet the
+                  challenges of pet grooming.
+                </p>
+                <Button className="service-btn" variant="primary">
+                  View More
+                </Button>
               </div>
             </div>
-
-            <div className="col-4 my-3" id="service-card">
-              <div className="card">
-                <img
-                  src="home treatment.jpg"
-                  className="card-img-top"
-                  alt="..."
-                />
-                <div className="card-body">
-                  <h5 className="card-title">Home Treatment</h5>
-                  <p className="card-text text-muted">
-                    Our goal is to ensure pet welfare through
-                    home treatment and prompt client response.
-                  </p>
-                  <div className="text-center">
-                  <Button className="service-btn" variant="primary">View More</Button>
-                  </div>
-                </div>
+          </div>
+          <div className="col-lg-4 mb-4">
+            <div className="card border-0 mb-2">
+              <img className="card-img-top" src="home treatment.jpg" alt="" />
+              <div className="card-body bg-light p-4">
+                <h4 className="card-title text-truncate">Home Treatment</h4>
+                <p>
+                  Our goal is to ensure pet welfare through home treatment and
+                  prompt client response.
+                </p>
+                <Button className="service-btn" variant="primary">
+                  View More
+                </Button>{" "}
               </div>
             </div>
-
-            <div className="col-4 my-3" id="service-card">
-              <div className="card">
-                <img
-                  src="clinical treatment.jpg"
-                  className="card-img-top"
-                  alt="..."
-                />
-                <div className="card-body">
-                  <h5 className="card-title">Clinical Treatment</h5>
-                  <p className="card-text text-muted">
-                    Our clinic offers professional veterinary care
-                    with a focus on disease prevention, diagnosis,
-                    and treatment
-                  </p>
-                  <div className="text-center">
-                  <Button className="service-btn" variant="primary">View More</Button>
-                  </div>
-                </div>
+          </div>
+          <div className="col-lg-4 mb-4">
+            <div className="card border-0 mb-2">
+              <img
+                className="card-img-top"
+                src="clinical treatment.jpg"
+                alt=""
+              />
+              <div className="card-body bg-light p-4">
+                <h4 className="card-title text-truncate">Clinical Treatment</h4>
+                <p>
+                  Our clinic offers professional veterinary care with a focus on
+                  disease prevention, diagnosis, and treatment
+                </p>
+                <Button className="service-btn" variant="primary">
+                  View More
+                </Button>{" "}
               </div>
             </div>
-
-            <div className="col-4 my-3" id="service-card">
-              <div className="card">
-                <img
-                  src="puppies.jpg"
-                  className="card-img-top"
-                  alt="..."
-                />
-                <div className="card-body">
-                  <h5 className="card-title">Puppies Buying & Selling</h5>
-                  <p className="card-text text-muted">
-                    We buy and sell common breed puppies like 
-                    Golden Retriever, Husky, Pug, etc. 100%
-                    guarantee on the breed offered.
-                  </p>
-                  <div className="text-center">
-                  <Button className="service-btn" variant="primary">View More</Button>
-                  </div>
-                </div>
+          </div>
+          <div className="col-lg-4 mb-4">
+            <div className="card border-0 mb-2">
+              <img className="card-img-top" src="puppies.jpg" alt="" />
+              <div className="card-body bg-light p-4">
+                <h4 className="card-title text-truncate">
+                  Puppies Buying & Selling
+                </h4>
+                <p>
+                  We buy and sell common breed puppies like Golden Retriever,
+                  Husky, Pug, etc. 100% guarantee on the breed offered.
+                </p>
+                <Button className="service-btn" variant="primary">
+                  View More
+                </Button>{" "}
               </div>
             </div>
-
-            <div className="col-4 my-3" id="service-card">
-              <div className="card">
-                <img
-                  src="dog training.jpg"
-                  className="card-img-top"
-                  alt="..."
-                />
-                <div className="card-body">
-                  <h5 className="card-title">Dog Training</h5>
-                  <p className="card-text text-muted">
-                    Our team of dog trainers is passionate,
-                    dedicated, and has years of professional
-                    experience.
-                  </p>
-                  <div className="text-center">
-                  <Button className="service-btn" variant="primary">View More</Button>
-                  </div>
-                </div>
+          </div>
+          <div className="col-lg-4 mb-4">
+            <div className="card border-0 mb-2">
+              <img className="card-img-top" src="dog training.jpg" alt="" />
+              <div className="card-body bg-light p-4">
+                <h4 className="card-title text-truncate">Dog Training</h4>
+                <p>
+                  Our team of dog trainers is passionate, dedicated, and has
+                  years of professional experience.
+                </p>
+                <Button className="service-btn" variant="primary">
+                  View More
+                </Button>{" "}
               </div>
             </div>
-
-            <div className="col-4 my-3" id="service-card">
-              <div className="card">
-                <img
-                  src="dog matting.jpg"
-                  className="card-img-top"
-                  alt="..."
-                />
-                <div className="card-body">
-                  <h5 className="card-title">Dog Matting</h5>
-                  <p className="card-text text-muted">
-                    Quality breeding requires experience and 
-                    passion. We can arrange and facilitate quality
-                    breed mating.
-                  </p>
-                  <div className="text-center">
-                  <Button className="service-btn" variant="primary">View More</Button>
-                  </div>
-                </div>
+          </div>
+          <div className="col-lg-4 mb-4">
+            <div className="card border-0 mb-2">
+              <img className="card-img-top" src="dog matting.jpg" alt="" />
+              <div className="card-body bg-light p-4">
+                <h4 className="card-title text-truncate">Dog Matting</h4>
+                <p>
+                  Quality breeding requires experience and passion. We can
+                  arrange and facilitate quality breed mating.
+                </p>
+                <Button className="service-btn" variant="primary">
+                  View More
+                </Button>{" "}
               </div>
             </div>
-          
           </div>
         </div>
-      </main>
+      </div>
     </>
   );
 };

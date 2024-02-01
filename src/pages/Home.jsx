@@ -1,17 +1,18 @@
 import React from "react";
 import { Button } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export const Home = () => {
   return (
     <>
       {/* Carousel start */}
-
       <div className="container-fluid p-0">
         <div
           id="header-carousel"
           className="carousel slide"
           data-ride="carousel"
         >
+          {/* Carousel Inner */}
           <div className="carousel-inner">
             <div className="carousel-item active">
               <img className="w-100" src="doggy.png" alt="Image" />
@@ -27,9 +28,11 @@ export const Home = () => {
               </div>
             </div>
           </div>
+          {/* Carousel Controls */}
           <a
             className="carousel-control-prev"
             href="#header-carousel"
+            role="button"
             data-slide="prev"
           >
             <div className="btn btn-primary rounded-circle" id="second-car">
@@ -39,6 +42,7 @@ export const Home = () => {
           <a
             className="carousel-control-next"
             href="#header-carousel"
+            role="button"
             data-slide="next"
           >
             <div className="btn btn-primary rounded-circle" id="third-car">
@@ -47,11 +51,9 @@ export const Home = () => {
           </a>
         </div>
       </div>
-
       {/* Carousel end */}
 
       {/* About us start */}
-
       <div className="container py-5">
         <div className="row py-5">
           <div className="col-lg-7 pb-5 pb-lg-0 px-3 px-lg-5">
@@ -65,9 +67,9 @@ export const Home = () => {
                 About Us
               </h1>
               <h5 className="text-muted mb-3" id="about-text">
-                Pet House & Animal clinic was established with moto to provide
-                qualitative and affordable animal healthcare service to your
-                doorstep.
+                Pet House & Animal clinic was established with the motto to
+                provide qualitative and affordable animal healthcare service to
+                your doorstep.
               </h5>
               <ul className="list-inline mt-5">
                 <li>
@@ -110,11 +112,9 @@ export const Home = () => {
           </div>
         </div>
       </div>
-
       {/* About us end */}
 
       {/* Services start */}
-
       <h1 className="text-center mt-5" id="service-head">
         Our Services
       </h1>
@@ -126,140 +126,110 @@ export const Home = () => {
         happiness of their furry friends.
       </p>
 
-      <main className="row">
-        <div className="col-12">
-          <div className="row">
-            <div className="col-4 my-3" id="service-card">
-              <div className="card">
-                <img
-                  src="doog grooming.jpg"
-                  className="card-img-top"
-                  alt="..."
-                />
-                <div className="card-body">
-                  <h5 className="card-title">Dog/Cat Grooming</h5>
-                  <p className="card-text text-muted">
-                    We are enhancing our skills, salon, and equipment to meet
-                    the challenges of pet grooming.
-                  </p>
-                  <div className="text-center">
-                    <Button className="service-btn" variant="primary">
-                      View More
-                    </Button>
-                  </div>
-                </div>
+      <div className="container pt-5">
+        <div className="row pb-3">
+          <div className="col-lg-4 mb-4">
+            <div className="card border-0 mb-2">
+              <img className="card-img-top" src="doog grooming.jpg" alt="" />
+              <div className="card-body bg-light p-4">
+                <h4 className="card-title text-truncate">Dog/Cat Grooming</h4>
+                <p>
+                  We are enhancing our skills, salon, and equipment to meet the
+                  challenges of pet grooming.
+                </p>
+                <Button className="service-btn" variant="primary">
+                  View More
+                </Button>
               </div>
             </div>
-
-            <div className="col-4 my-3" id="service-card">
-              <div className="card">
-                <img
-                  src="home treatment.jpg"
-                  className="card-img-top"
-                  alt="..."
-                />
-                <div className="card-body">
-                  <h5 className="card-title">Home Treatment</h5>
-                  <p className="card-text text-muted">
-                    Our goal is to ensure pet welfare through home treatment and
-                    prompt client response.
-                  </p>
-                  <div className="text-center">
-                    <Button className="service-btn" variant="primary">
-                      View More
-                    </Button>
-                  </div>
-                </div>
+          </div>
+          <div className="col-lg-4 mb-4">
+            <div className="card border-0 mb-2">
+              <img className="card-img-top" src="home treatment.jpg" alt="" />
+              <div className="card-body bg-light p-4">
+                <h4 className="card-title text-truncate">Home Treatment</h4>
+                <p>
+                  Our goal is to ensure pet welfare through home treatment and
+                  prompt client response.
+                </p>
+                <Button className="service-btn" variant="primary">
+                  View More
+                </Button>{" "}
               </div>
             </div>
-
-            <div className="col-4 my-3" id="service-card">
-              <div className="card">
-                <img
-                  src="clinical treatment.jpg"
-                  className="card-img-top"
-                  alt="..."
-                />
-                <div className="card-body">
-                  <h5 className="card-title">Clinical Treatment</h5>
-                  <p className="card-text text-muted">
-                    Our clinic offers professional veterinary care with a focus
-                    on disease prevention, diagnosis, and treatment
-                  </p>
-                  <div className="text-center">
-                    <Button className="service-btn" variant="primary">
-                      View More
-                    </Button>
-                  </div>
-                </div>
+          </div>
+          <div className="col-lg-4 mb-4">
+            <div className="card border-0 mb-2">
+              <img
+                className="card-img-top"
+                src="clinical treatment.jpg"
+                alt=""
+              />
+              <div className="card-body bg-light p-4">
+                <h4 className="card-title text-truncate">Clinical Treatment</h4>
+                <p>
+                  Our clinic offers professional veterinary care with a focus on
+                  disease prevention, diagnosis, and treatment
+                </p>
+                <Button className="service-btn" variant="primary">
+                  View More
+                </Button>{" "}
               </div>
             </div>
-
-            <div className="col-4 my-3" id="service-card">
-              <div className="card">
-                <img src="puppies.jpg" className="card-img-top" alt="..." />
-                <div className="card-body">
-                  <h5 className="card-title">Puppies Buying & Selling</h5>
-                  <p className="card-text text-muted">
-                    We buy and sell common breed puppies like Golden Retriever,
-                    Husky, Pug, etc. 100% guarantee on the breed offered.
-                  </p>
-                  <div className="text-center">
-                    <Button className="service-btn" variant="primary">
-                      View More
-                    </Button>
-                  </div>
-                </div>
+          </div>
+          <div className="col-lg-4 mb-4">
+            <div className="card border-0 mb-2">
+              <img className="card-img-top" src="puppies.jpg" alt="" />
+              <div className="card-body bg-light p-4">
+                <h4 className="card-title text-truncate">
+                  Puppies Buying & Selling
+                </h4>
+                <p>
+                  We buy and sell common breed puppies like Golden Retriever,
+                  Husky, Pug, etc. 100% guarantee on the breed offered.
+                </p>
+                <Button className="service-btn" variant="primary">
+                  View More
+                </Button>{" "}
               </div>
             </div>
-
-            <div className="col-4 my-3" id="service-card">
-              <div className="card">
-                <img
-                  src="dog training.jpg"
-                  className="card-img-top"
-                  alt="..."
-                />
-                <div className="card-body">
-                  <h5 className="card-title">Dog Training</h5>
-                  <p className="card-text text-muted">
-                    Our team of dog trainers is passionate, dedicated, and has
-                    years of professional experience.
-                  </p>
-                  <div className="text-center">
-                    <Button className="service-btn" variant="primary">
-                      View More
-                    </Button>
-                  </div>
-                </div>
+          </div>
+          <div className="col-lg-4 mb-4">
+            <div className="card border-0 mb-2">
+              <img className="card-img-top" src="dog training.jpg" alt="" />
+              <div className="card-body bg-light p-4">
+                <h4 className="card-title text-truncate">Dog Training</h4>
+                <p>
+                  Our team of dog trainers is passionate, dedicated, and has
+                  years of professional experience.
+                </p>
+                <Button className="service-btn" variant="primary">
+                  View More
+                </Button>{" "}
               </div>
             </div>
-
-            <div className="col-4 my-3" id="service-card">
-              <div className="card">
-                <img src="dog matting.jpg" className="card-img-top" alt="..." />
-                <div className="card-body">
-                  <h5 className="card-title">Dog Matting</h5>
-                  <p className="card-text text-muted">
-                    Quality breeding requires experience and passion. We can
-                    arrange and facilitate quality breed mating.
-                  </p>
-                  <div className="text-center">
-                    <Button className="service-btn" variant="primary">
-                      View More
-                    </Button>
-                  </div>
-                </div>
+          </div>
+          <div className="col-lg-4 mb-4">
+            <div className="card border-0 mb-2">
+              <img className="card-img-top" src="dog matting.jpg" alt="" />
+              <div className="card-body bg-light p-4">
+                <h4 className="card-title text-truncate">Dog Matting</h4>
+                <p>
+                  Quality breeding requires experience and passion. We can
+                  arrange and facilitate quality breed mating.
+                </p>
+                <Button className="service-btn" variant="primary">
+                  View More
+                </Button>{" "}
               </div>
             </div>
           </div>
         </div>
-      </main>
+      </div>
 
       {/* Services end */}
 
       {/* Pet collection start */}
-
       <h1 className="text-center mt-5" id="service-head">
         Our Pet Collections
       </h1>
@@ -267,172 +237,144 @@ export const Home = () => {
         "Bring joy to your home with a furry companion from our pet selection."
       </p>
 
-      <main className="row">
-        <div className="col-12">
-          <div className="row">
-            <div className="col-3 my-3" id="carddy">
-              <div className="card">
-                <img
-                  src="doog grooming.jpg"
-                  className="card-img-top"
-                  alt="..."
-                />
-                <div className="card-body">
-                  <h5 className="card-title">Golden Retriever</h5>
-                  <span className="text-muted">Gender:</span>
-                  <span className="after-text me-4"> Male</span>{" "}
-                  <span className="text-muted">Age:</span>
-                  <span className="after-text"> 2 months</span>
-                </div>
+      <div className="container pt-5">
+        <div className="row pb-3">
+          <div className="col-lg-3 col-md-6 mb-4">
+            <div className="card border" id="cardyy">
+              <img className="card-img-top" src="doog grooming.jpg" alt="" />
+              <div className="card-body">
+                <h5 className="card-title">Golden Retriever</h5>
+                <span className="text-muted">Gender:</span>
+                <span className="after-text me-4"> Male</span>{" "}
+                <span className="text-muted">Age:</span>
+                <span className="after-text"> 2 months</span>
               </div>
             </div>
-
-            <div className="col-3 my-3" id="carddy">
-              <div className="card">
-                <img
-                  src="home treatment.jpg"
-                  className="card-img-top"
-                  alt="..."
-                />
-                <div className="card-body">
-                  <h5 className="card-title">Doberman</h5>
-                  <span className="text-muted">Gender:</span>
-                  <span className="after-text me-4"> Male</span>{" "}
-                  <span className="text-muted">Age:</span>
-                  <span className="after-text"> 2 months</span>
-                </div>
+          </div>
+          <div className="col-lg-3 col-md-6 mb-4">
+            <div className="card border" id="cardyy">
+              <img className="card-img-top" src="home treatment.jpg" alt="" />
+              <div className="card-body">
+                <h5 className="card-title">Doberman</h5>
+                <span className="text-muted">Gender:</span>
+                <span className="after-text me-4"> Male</span>{" "}
+                <span className="text-muted">Age:</span>
+                <span className="after-text"> 2 months</span>
               </div>
             </div>
-
-            <div className="col-3 my-3" id="carddy">
-              <div className="card">
-                <img
-                  src="clinical treatment.jpg"
-                  className="card-img-top"
-                  alt="..."
-                />
-                <div className="card-body">
-                  <h5 className="card-title">Apso</h5>
-                  <span className="text-muted">Gender:</span>
-                  <span className="after-text me-4"> Female</span>{" "}
-                  <span className="text-muted">Age:</span>
-                  <span className="after-text"> 1 year</span>
-                </div>
+          </div>
+          <div className="col-lg-3 col-md-6 mb-4">
+            <div className="card border" id="cardyy">
+              <img
+                className="card-img-top"
+                src="clinical treatment.jpg"
+                alt=""
+              />
+              <div className="card-body">
+                <h5 className="card-title">Apso</h5>
+                <span className="text-muted">Gender:</span>
+                <span className="after-text me-4"> Female</span>{" "}
+                <span className="text-muted">Age:</span>
+                <span className="after-text"> 1 year</span>
               </div>
             </div>
-
-            <div className="col-3 my-3" id="carddy">
-              <div className="card">
-                <img src="puppies.jpg" className="card-img-top" alt="..." />
-                <div className="card-body">
-                  <h5 className="card-title">Chihuahua</h5>
-                  <span className="text-muted">Gender:</span>
-                  <span className="after-text me-4"> Female</span>{" "}
-                  <span className="text-muted">Age:</span>
-                  <span className="after-text"> 1 year</span>
-                </div>
+          </div>
+          <div className="col-lg-3 col-md-6 mb-4">
+            <div className="card border" id="cardyy">
+              <img className="card-img-top" src="puppies.jpg" alt="" />
+              <div className="card-body">
+                <h5 className="card-title">Chihuahua</h5>
+                <span className="text-muted">Gender:</span>
+                <span className="after-text me-4"> Female</span>{" "}
+                <span className="text-muted">Age:</span>
+                <span className="after-text"> 1 year</span>
               </div>
             </div>
-
-            <div className="col-3 my-3" id="carddy">
-              <div className="card">
-                <img
-                  src="dog training.jpg"
-                  className="card-img-top"
-                  alt="..."
-                />
-                <div className="card-body">
-                  <h5 className="card-title">Japanese Spitz</h5>
-                  <span className="text-muted">Gender:</span>
-                  <span className="after-text me-4"> Male</span>{" "}
-                  <span className="text-muted">Age:</span>
-                  <span className="after-text"> 2 months</span>
-                </div>
+          </div>
+          <div className="col-lg-3 col-md-6 mb-4">
+            <div className="card border" id="cardyy">
+              <img className="card-img-top" src="dog training.jpg" alt="" />
+              <div className="card-body">
+                <h5 className="card-title">Japanese Spitz</h5>
+                <span className="text-muted">Gender:</span>
+                <span className="after-text me-4"> Male</span>{" "}
+                <span className="text-muted">Age:</span>
+                <span className="after-text"> 2 months</span>
               </div>
             </div>
-
-            <div className="col-3 my-3" id="carddy">
-              <div className="card">
-                <img src="dog matting.jpg" className="card-img-top" alt="..." />
-                <div className="card-body">
-                  <h5 className="card-title">German Shepard</h5>
-                  <span className="text-muted">Gender:</span>
-                  <span className="after-text me-4"> Male</span>{" "}
-                  <span className="text-muted">Age:</span>
-                  <span className="after-text"> 2 months</span>
-                </div>
+          </div>
+          <div className="col-lg-3 col-md-6 mb-4">
+            <div className="card border" id="cardyy">
+              <img className="card-img-top" src="dog matting.jpg" alt="" />
+              <div className="card-body">
+                <h5 className="card-title">German Shepard</h5>
+                <span className="text-muted">Gender:</span>
+                <span className="after-text me-4"> Male</span>{" "}
+                <span className="text-muted">Age:</span>
+                <span className="after-text"> 2 months</span>
               </div>
             </div>
-
-            <div className="col-3 my-3" id="carddy">
-              <div className="card">
-                <img
-                  src="doog grooming.jpg"
-                  className="card-img-top"
-                  alt="..."
-                />
-                <div className="card-body">
-                  <h5 className="card-title">Husky</h5>
-                  <span className="text-muted">Gender:</span>
-                  <span className="after-text me-4"> Female</span>{" "}
-                  <span className="text-muted">Age:</span>
-                  <span className="after-text"> 3 months</span>
-                </div>
+          </div>
+          <div className="col-lg-3 col-md-6 mb-4">
+            <div className="card border" id="cardyy">
+              <img className="card-img-top" src="doog grooming.jpg" alt="" />
+              <div className="card-body">
+                <h5 className="card-title">Husky</h5>
+                <span className="text-muted">Gender:</span>
+                <span className="after-text me-4"> Female</span>{" "}
+                <span className="text-muted">Age:</span>
+                <span className="after-text"> 3 months</span>
               </div>
             </div>
-
-            <div className="col-3 my-3" id="carddy">
-              <div className="card">
-                <img
-                  src="clinical treatment.jpg"
-                  className="card-img-top"
-                  alt="..."
-                />
-                <div className="card-body">
-                  <h5 className="card-title">Pug</h5>
-                  <span className="text-muted">Gender:</span>
-                  <span className="after-text me-4"> Female</span>{" "}
-                  <span className="text-muted">Age:</span>
-                  <span className="after-text"> 4 months</span>
-                </div>
+          </div>
+          <div className="col-lg-3 col-md-6 mb-4">
+            <div className="card border" id="cardyy">
+              <img
+                className="card-img-top"
+                src="clinical treatment.jpg"
+                alt=""
+              />
+              <div className="card-body">
+                <h5 className="card-title">Pug</h5>
+                <span className="text-muted">Gender:</span>
+                <span className="after-text me-4"> Female</span>{" "}
+                <span className="text-muted">Age:</span>
+                <span className="after-text"> 4 months</span>
               </div>
             </div>
           </div>
         </div>
-        <a
-          href="#"
-          className="btn btn-lg btn-primary mt-3 me-3 px-4"
-          id="pet-btn"
-        >
-          View All <i className="fa-solid fa-circle-chevron-right ms-3"></i>
-        </a>
-      </main>
+      </div>
+      <a
+        href="#"
+        className="btn btn-lg btn-primary me-3 px-4"
+        id="pet-btn"
+      >
+        View All <i className="fa-solid fa-circle-chevron-right ms-3"></i>
+      </a>
 
       {/* Pet collection end */}
 
       {/* Get know start */}
-
       <div className="container-fluid p-3">
-          <img src="dogwear.jpg" className="w-100" alt="" id="box" />
-          <div id="box-content">
-            <p className="box-para">One More Friend Thousands More Fun!</p>
-            <h1 className="box-head">
-              "Find your furry soulmate at Our Pet Shop."
-            </h1>
-            <a
-              href="#"
-              className="btn btn-lg bg-white mt-3 me-3 px-4"
-              id="box-btn"
-            >
-              Get Now <i className="fa-solid fa-circle-chevron-right ms-3"></i>
-            </a>
-          </div>
+        <img src="dogwear.jpg" className="w-100" alt="" id="box" />
+        <div id="box-content">
+          <p className="box-para">One More Friend Thousands More Fun!</p>
+          <h1 className="box-head">
+            "Find your furry soulmate at Our Pet Shop."
+          </h1>
+          <a
+            href="#"
+            className="btn btn-lg bg-white mt-3 me-3 px-4"
+            id="box-btn"
+          >
+            Get Now <i className="fa-solid fa-circle-chevron-right ms-3"></i>
+          </a>
+        </div>
       </div>
-
       {/* Get know end */}
 
       {/* Blog start */}
-
       <div className="container pt-5">
         <div className="d-flex flex-column text-center mb-5">
           <h1 className="text-center" id="blog-head">
@@ -493,7 +435,6 @@ export const Home = () => {
           </div>
         </div>
       </div>
-
       {/* Blog end */}
     </>
   );

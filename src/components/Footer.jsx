@@ -51,27 +51,6 @@ export const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className="col-lg-3 col-sm-6 text-center text-sm-left">
-              <div className="row">
-                <div className="col-12">
-                  <h6>Gallery</h6>
-                </div>
-                <div className="gallery-img">
-                <div className="d-flex flex-row">
-                  <img src="dogg1.jpg" className="footer-img"></img>
-                  <img src="dogg2.jpg" className="footer-img"></img>
-                </div>
-                
-                <div className="d-flex flex-row">
-                  <img src="dogg3.jpg" className="footer-img"></img>
-                  <img src="doggy.png" className="footer-img"></img>
-                </div>
-                </div>
-                <div className="col-12">
-                  
-                </div>
-              </div>
-            </div>
           </div>
           <hr />
           <div className="p-3" id="footer">
